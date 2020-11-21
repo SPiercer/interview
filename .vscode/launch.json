@@ -8,7 +8,6 @@
             "name": "interview",
             "request": "launch",
             "type": "dart",
-            "args": ["-v"]
         }
     ]
 }

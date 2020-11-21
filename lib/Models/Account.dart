@@ -6,6 +6,7 @@ class Account {
   double rating;
   bool isDoctor;
   bool isFavourite;
+  bool isAvailable;
 
   Account(
       {this.imgPath,
@@ -14,5 +15,16 @@ class Account {
       this.isFavourite,
       this.speciality,
       this.name,
-      this.rating});
+      this.rating,
+      this.isAvailable});
+
+  Account.fromJson(Map<String, dynamic> json)
+      : name = json['name'],
+        speciality = json['speciality'],
+        distance = json['distance'],
+        imgPath = json['imgPath'],
+        rating = json['rating'],
+        isDoctor = json['isDoctor'],
+        isAvailable = json['isAvailable'],
+        isFavourite = json['isFavourite'];
 }
